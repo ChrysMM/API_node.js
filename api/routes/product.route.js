@@ -49,7 +49,7 @@ router.route("/:id").get((req, res) => {
             //on envoie un message d'erreur en console
             //ici on part du principe que l'erreur viendra du serveur
             //mais on devrait d'abord vérifier en temps normal au lieu de supposer
-            //TODO : filtrer correctement le type d'erreur
+
             res.status(500).json({
                 message: `Error retrieving product : ${err}`,
             });
